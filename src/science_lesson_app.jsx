@@ -97,7 +97,21 @@ const ScienceLessonApp = () => {
         { q: "Write the respiration equation", a: "Glucose + Oxygen → Carbon Dioxide + Water + Energy" },
         { q: "What's the difference between respiration and breathing?", a: "Breathing is physical movement of air; respiration is chemical energy release" },
         { q: "Why do we need oxygen?", a: "To break down glucose and release energy in cells" },
-        { q: "What is the trachea?", a: "The windpipe that carries air from mouth/nose to lungs" }
+        { q: "What is the trachea?", a: "The windpipe that carries air from mouth/nose to lungs" },
+        { q: "What is aerobic respiration?", a: "Respiration with oxygen that releases the most energy" },
+        { q: "What is anaerobic respiration?", a: "Respiration without oxygen that releases less energy" },
+        { q: "What are mitochondria?", a: "The part of cells where respiration happens and energy is released" },
+        { q: "What happens during photosynthesis?", a: "Plants use sunlight to make glucose from CO₂ and water" },
+        { q: "What is ATP?", a: "Adenosine triphosphate - the energy molecule cells use for work" },
+        { q: "What is glucose?", a: "A simple sugar that cells break down for energy" },
+        { q: "What are bronchi?", a: "The two main branches of the trachea that lead to each lung" },
+        { q: "What are bronchioles?", a: "Smaller branches of bronchi that lead to alveoli" },
+        { q: "How many alveoli are in human lungs?", a: "About 300 million (gives huge surface area)" },
+        { q: "What is diffusion?", a: "Movement of molecules from high to low concentration" },
+        { q: "What is the respiratory system?", a: "System that brings oxygen in and removes CO₂ from body" },
+        { q: "What happens to glucose in respiration?", a: "It is broken down to release energy stored in chemical bonds" },
+        { q: "Why is oxygen important?", a: "It accepts electrons at the end of respiration chain" },
+        { q: "What is the byproduct of respiration?", a: "Carbon dioxide and water that need to be removed" }
       ],
 
       quiz: [
@@ -213,7 +227,21 @@ const ScienceLessonApp = () => {
         { q: "What does 'expiration' mean?", a: "Breathing out - air leaves lungs" },
         { q: "Which muscle controls 70% of breathing?", a: "The diaphragm" },
         { q: "What are intercostal muscles?", a: "Muscles between ribs that help with breathing" },
-        { q: "How does pressure cause air to flow?", a: "When lung volume increases, pressure decreases, and air rushes in to equalize" }
+        { q: "How does pressure cause air to flow?", a: "When lung volume increases, pressure decreases, and air rushes in to equalize" },
+        { q: "What are external intercostal muscles?", a: "Muscles that lift ribcage during inspiration" },
+        { q: "What are internal intercostal muscles?", a: "Muscles that pull ribcage down during expiration" },
+        { q: "What happens to lung volume during inspiration?", a: "It increases as diaphragm moves down" },
+        { q: "What happens to lung volume during expiration?", a: "It decreases as diaphragm moves up" },
+        { q: "What is the dome shape of diaphragm?", a: "Its relaxed position before contraction" },
+        { q: "How do ribs help breathing?", a: "They move up/down to increase/decrease chest volume" },
+        { q: "What is Boyle's Law?", a: "As volume increases, pressure decreases (and vice versa)" },
+        { q: "How often do humans breathe?", a: "About 12-20 breaths per minute at rest" },
+        { q: "What controls breathing rate?", a: "Brain and oxygen/CO₂ levels in blood" },
+        { q: "What happens during quiet breathing?", a: "Mainly diaphragm contracts, intercostal muscles less active" },
+        { q: "What happens during exercise breathing?", a: "Both diaphragm and intercostal muscles work harder" },
+        { q: "What is the total capacity of lungs?", a: "About 6 liters in adults" },
+        { q: "How long does one breath cycle take?", a: "About 5 seconds (inspiration 2 sec, expiration 3 sec)" },
+        { q: "What muscles are used in forced expiration?", a: "Abdominal muscles help push air out" }
       ],
 
       quiz: [
@@ -322,11 +350,25 @@ const ScienceLessonApp = () => {
 
       flashcards: [
         { q: "What is an alveolus?", a: "A tiny air sac in the lungs where gas exchange happens" },
-        { q: "How many alveoli are in human lungs?", a: "About 300 million (millions in each lung)" },
-        { q: "What is diffusion?", a: "Movement of molecules from high to low concentration areas" },
-        { q: "Why are alveoli walls so thin?", a: "To allow gases to diffuse quickly across them" },
-        { q: "What is the surface area of alveoli?", a: "About 70 square meters (size of a tennis court!)" },
-        { q: "Where does O₂ bind in blood?", a: "To hemoglobin protein in red blood cells" }
+        { q: "How many alveoli are in human lungs?", a: "About 300 million" },
+        { q: "What is diffusion?", a: "Movement from high to low concentration" },
+        { q: "Why are alveoli walls thin?", a: "To allow quick gas diffusion" },
+        { q: "Surface area of alveoli?", a: "About 70 square meters" },
+        { q: "Where does O₂ bind?", a: "To hemoglobin in red blood cells" },
+        { q: "What is hemoglobin?", a: "Protein that carries oxygen" },
+        { q: "How does O₂ cross wall?", a: "By diffusion" },
+        { q: "How does CO₂ cross wall?", a: "By diffusion" },
+        { q: "What makes walls moist?", a: "Moisture helps gases dissolve" },
+        { q: "Why large surface area?", a: "More molecules can diffuse at once" },
+        { q: "What surrounds alveoli?", a: "Capillaries (tiny blood vessels)" },
+        { q: "What is a capillary?", a: "Tiny blood vessel for gas exchange" },
+        { q: "Why capillary walls thin?", a: "To allow gas diffusion" },
+        { q: "Oxyhemoglobin is?", a: "Hemoglobin with oxygen bound" },
+        { q: "How does CO₂ travel back?", a: "Dissolved in blood or bound to hemoglobin" },
+        { q: "Most of lung is?", a: "Alveolar space" },
+        { q: "Why ventilation important?", a: "Replaces stale air for continued diffusion" },
+        { q: "What is partial pressure?", a: "Pressure of one gas in mixture" },
+        { q: "How efficient is exchange?", a: "Very efficient - thin walls, large surface" }
       ],
 
       quiz: [
