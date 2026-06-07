@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { SUBJECTS, LEVELS, loadLessonIndex } from './utils/contentLoader';
 
@@ -9,7 +9,7 @@ const SubjectSelector = ({ onSelect }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const loadLessons = async () => {
+  const loadLessons = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
@@ -32,7 +32,7 @@ const SubjectSelector = ({ onSelect }) => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [selectedSubject, selectedLevel]);
 
   // Load lessons when subject and level are selected
   useEffect(() => {
