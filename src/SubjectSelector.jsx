@@ -1,10 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowRight } from 'lucide-react';
-import { SUBJECTS, LEVELS, loadLessonIndex } from './utils/contentLoader';
+import { SUBJECTS, LEVELS } from './utils/contentLoader';
 import {
   loadGoogleAPI,
-  getAvailableSubjects,
-  getAvailableLevels,
   getLessonsBySubjectAndLevel
 } from './utils/googleDriveClient';
 
@@ -14,17 +12,41 @@ const SubjectSelector = ({ onSelect }) => {
   const [lessons, setLessons] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [apiReady, setApiReady] = useState(false);
+
+  // Initialize Google API on mount
+  useEffect(() => {
+    console.log('Initializing Google Drive API...');
+    loadGoogleAPI()
+      .then(() => {
+        console.log('✓ Google Drive API initialized successfully');
+        setApiReady(true);
+      })
+      .catch((err) => {
+        console.error('✗ Failed to initialize Google Drive API:', err);
+        setError('Google Drive API not available');
+      });
+  }, []);
 
   const loadLessons = useCallback(async () => {
+    if (!apiReady) {
+      console.warn('API not ready yet');
+      setError('Google Drive API is loading... Please wait.');
+      return;
+    }
+
     setLoading(true);
     setError(null);
     try {
+      console.log(`Loading lessons for ${selectedSubject}/${selectedLevel}...`);
       // Load from Google Drive
       const googleDriveLessons = await getLessonsBySubjectAndLevel(selectedSubject, selectedLevel);
 
       if (googleDriveLessons && googleDriveLessons.length > 0) {
+        console.log(`✓ Loaded ${googleDriveLessons.length} lessons`);
         setLessons(googleDriveLessons);
       } else {
+        console.warn(`No lessons found for ${selectedSubject}/${selectedLevel}`);
         setError(`No lessons found for ${selectedSubject} ${selectedLevel}. Please check Google Drive folder structure.`);
         setLessons([]);
       }
@@ -35,14 +57,14 @@ const SubjectSelector = ({ onSelect }) => {
     } finally {
       setLoading(false);
     }
-  }, [selectedSubject, selectedLevel]);
+  }, [selectedSubject, selectedLevel, apiReady]);
 
   // Load lessons when subject and level are selected
   useEffect(() => {
-    if (selectedSubject && selectedLevel) {
+    if (selectedSubject && selectedLevel && apiReady) {
       loadLessons();
     }
-  }, [selectedSubject, selectedLevel, loadLessons]);
+  }, [selectedSubject, selectedLevel, loadLessons, apiReady]);
 
   const handleLessonSelect = (lessonId) => {
     onSelect({
