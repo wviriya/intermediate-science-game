@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Target, Eye, ChevronDown, ChevronUp, Home, Zap, Trophy } from 'lucide-react';
-import { loadLesson, randomizeQuestions, randomizeFlashcards, randomizeQuestionOptions } from './utils/contentLoader';
+import { Target, Eye, ChevronDown, ChevronUp, Home } from 'lucide-react';
+import { loadLesson, randomizeQuestions, randomizeFlashcards } from './utils/contentLoader';
 import { useGamification, GamificationDisplay } from './Gamification';
 
 const TutorApp = ({ subject, level, lessonFile, onBack }) => {

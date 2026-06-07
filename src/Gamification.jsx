@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Trophy, Star, Zap, Target, Award, TrendingUp, Lock, Unlock } from 'lucide-react';
+import { Trophy, Star, Zap, Target, Award, TrendingUp } from 'lucide-react';
 
 /**
  * Gamification System for Learning Hub

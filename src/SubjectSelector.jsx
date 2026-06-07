@@ -9,13 +9,6 @@ const SubjectSelector = ({ onSelect }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Load lessons when subject and level are selected
-  useEffect(() => {
-    if (selectedSubject && selectedLevel) {
-      loadLessons();
-    }
-  }, [selectedSubject, selectedLevel]);
-
   const loadLessons = async () => {
     setLoading(true);
     setError(null);
@@ -40,6 +33,13 @@ const SubjectSelector = ({ onSelect }) => {
       setLoading(false);
     }
   };
+
+  // Load lessons when subject and level are selected
+  useEffect(() => {
+    if (selectedSubject && selectedLevel) {
+      loadLessons();
+    }
+  }, [selectedSubject, selectedLevel, loadLessons]);
 
   const handleLessonSelect = (lessonId) => {
     onSelect({
