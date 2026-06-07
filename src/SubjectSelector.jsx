@@ -6,9 +6,9 @@ import {
   getLessonsBySubjectAndLevel
 } from './utils/googleDriveClient';
 
-const SubjectSelector = ({ onSelect }) => {
-  const [selectedSubject, setSelectedSubject] = useState(null);
-  const [selectedLevel, setSelectedLevel] = useState(null);
+const SubjectSelector = ({ onSelect, initialSubject = null, initialLevel = null }) => {
+  const [selectedSubject, setSelectedSubject] = useState(initialSubject);
+  const [selectedLevel, setSelectedLevel] = useState(initialLevel);
   const [lessons, setLessons] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);

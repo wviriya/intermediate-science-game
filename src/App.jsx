@@ -4,12 +4,16 @@ import TutorApp from './TutorApp';
 
 function App() {
   const [selectedLesson, setSelectedLesson] = useState(null);
+  const [lastSubject, setLastSubject] = useState(null);
+  const [lastLevel, setLastLevel] = useState(null);
 
   const handleLessonSelect = (lessonInfo) => {
+    setLastSubject(lessonInfo.subject);
+    setLastLevel(lessonInfo.level);
     setSelectedLesson(lessonInfo);
   };
 
-  const handleBackToSubjects = () => {
+  const handleBackToLessons = () => {
     setSelectedLesson(null);
   };
 
@@ -17,10 +21,10 @@ function App() {
     return (
       <div>
         <button
-          onClick={handleBackToSubjects}
+          onClick={handleBackToLessons}
           className="fixed top-4 left-4 z-50 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 font-semibold"
         >
-          ← Back to Subjects
+          ← Back to Lessons
         </button>
         <TutorApp
           subject={selectedLesson.subject}
@@ -32,7 +36,7 @@ function App() {
     );
   }
 
-  return <SubjectSelector onSelect={handleLessonSelect} />;
+  return <SubjectSelector onSelect={handleLessonSelect} initialSubject={lastSubject} initialLevel={lastLevel} />;
 }
 
 export default App;
