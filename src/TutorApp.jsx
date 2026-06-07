@@ -42,7 +42,7 @@ const TutorApp = ({ subject, level, lessonFile, lessonData, onBack }) => {
     if (subject && level && lessonFile) {
       loadLessonData();
     }
-  }, [subject, level, lessonFile]);
+  }, [subject, level, lessonFile, lessonData]);
 
   const handleQuizStart = () => {
     setShowQuiz(true);
