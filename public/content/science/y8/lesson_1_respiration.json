@@ -1,0 +1,183 @@
+{
+  "id": "respiration_respiratory_system",
+  "week": 1,
+  "title": "Respiration & the Respiratory System",
+  "subject": "science",
+  "level": "y8",
+  "icon": "🫁",
+  "color": "bg-red-100",
+  "textColor": "text-red-700",
+  "difficulty": "intermediate",
+  "introduction": "Respiration is a chemical process happening in every cell of your body right now. It's how your cells release energy from food. Don't confuse it with breathing—breathing is just the physical movement of air in and out of your lungs!",
+  "sections": [
+    {
+      "title": "What is Respiration?",
+      "content": [
+        "Respiration is a chemical reaction that happens inside cells",
+        "It breaks down glucose (sugar) to release energy",
+        "This energy is used for all body activities: moving, thinking, growing",
+        "Happens in every cell, not just in lungs",
+        "Two types: Aerobic (with oxygen) and Anaerobic (without oxygen)",
+        "Aerobic respiration is much more efficient (releases more energy)"
+      ]
+    },
+    {
+      "title": "Aerobic Respiration Equation",
+      "content": [
+        "Glucose + Oxygen → Carbon Dioxide + Water + Energy",
+        "C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + Energy (ATP)",
+        "This equation shows the chemical reaction",
+        "Glucose comes from food we eat",
+        "Oxygen comes from air we breathe",
+        "CO₂ and water are waste products we get rid of"
+      ]
+    },
+    {
+      "title": "Structure of Respiratory System",
+      "content": [
+        "Nose/Mouth: Filters and warms air",
+        "Trachea (windpipe): Carries air to lungs",
+        "Bronchi: Trachea branches into two bronchi (one per lung)",
+        "Bronchioles: Bronchi branch into smaller tubes",
+        "Alveoli: Tiny air sacs where gas exchange happens (millions per lung!)",
+        "Diaphragm: Muscle that controls breathing"
+      ]
+    }
+  ],
+  "diagram": "RESPIRATORY SYSTEM PATH:\n\nNose/Mouth\n    ↓ (warm air)\nTrachea (windpipe)\n    ↓\nBronchi (splits into 2)\n    ↓           ↓\nLeft Lung    Right Lung\n    ↓           ↓\nBronchioles  Bronchioles\n    ↓           ↓\nAlveoli (gas exchange!)\n    ↓\nOxygen → Blood\nCO₂ ← Blood",
+  "flashcards": [
+    {
+      "id": "fc_1",
+      "q": "What is respiration?",
+      "a": "A chemical process that breaks down glucose to release energy in cells"
+    },
+    {
+      "id": "fc_2",
+      "q": "Where does gas exchange happen?",
+      "a": "In the alveoli (tiny air sacs in lungs)"
+    },
+    {
+      "id": "fc_3",
+      "q": "Write the respiration equation",
+      "a": "Glucose + Oxygen → Carbon Dioxide + Water + Energy"
+    },
+    {
+      "id": "fc_4",
+      "q": "What's the difference between respiration and breathing?",
+      "a": "Breathing is physical movement of air; respiration is chemical energy release"
+    },
+    {
+      "id": "fc_5",
+      "q": "Why do we need oxygen?",
+      "a": "To break down glucose and release energy in cells"
+    },
+    {
+      "id": "fc_6",
+      "q": "What is the trachea?",
+      "a": "The windpipe that carries air from mouth/nose to lungs"
+    },
+    {
+      "id": "fc_7",
+      "q": "What is aerobic respiration?",
+      "a": "Respiration with oxygen that releases the most energy"
+    },
+    {
+      "id": "fc_8",
+      "q": "What is anaerobic respiration?",
+      "a": "Respiration without oxygen that releases less energy"
+    },
+    {
+      "id": "fc_9",
+      "q": "What are mitochondria?",
+      "a": "The part of cells where respiration happens and energy is released"
+    },
+    {
+      "id": "fc_10",
+      "q": "What is ATP?",
+      "a": "Adenosine triphosphate - the energy molecule cells use for work"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q_1",
+      "q": "Respiration mainly happens in...",
+      "opts": ["Lungs only", "Every cell", "Brain", "Stomach"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_2",
+      "q": "The equation for aerobic respiration is...",
+      "opts": ["Glucose only", "Glucose + O₂ → CO₂ + H₂O + Energy", "Just water", "Only in lungs"],
+      "ans": 1,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_3",
+      "q": "What is the difference between respiration and breathing?",
+      "opts": ["No difference", "Respiration is chemical, breathing is physical", "They happen in different organs", "Respiration is faster"],
+      "ans": 1,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_4",
+      "q": "Where does gas exchange happen?",
+      "opts": ["Trachea", "Alveoli", "Bronchi", "Diaphragm"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_5",
+      "q": "Aerobic respiration requires...",
+      "opts": ["Only glucose", "Only oxygen", "Glucose and oxygen", "Carbon dioxide"],
+      "ans": 2,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_6",
+      "q": "What are alveoli?",
+      "opts": ["Large tubes", "Tiny air sacs", "Muscles", "Blood vessels"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_7",
+      "q": "The respiratory system path is...",
+      "opts": ["Nose → Lungs → Stomach", "Nose → Trachea → Bronchi → Alveoli", "Mouth → Heart → Lungs", "Nose → Diaphragm → Lungs"],
+      "ans": 1,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_8",
+      "q": "How many times does respiration happen?",
+      "opts": ["Only in lungs", "Only once per day", "Continuously in every cell", "Only during exercise"],
+      "ans": 2,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_9",
+      "q": "Which gas is released from cells during respiration?",
+      "opts": ["Oxygen", "Nitrogen", "Carbon dioxide", "Helium"],
+      "ans": 2,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_10",
+      "q": "What is the purpose of aerobic respiration?",
+      "opts": ["To breathe", "To release energy from glucose", "To cool the body", "To make muscles bigger"],
+      "ans": 1,
+      "difficulty": "intermediate"
+    }
+  ],
+  "cheatsheet": {
+    "Key Terms": {
+      "Respiration": "Breaking down glucose for energy (happens in cells)",
+      "Breathing": "Physical movement of air in/out",
+      "Aerobic": "With oxygen (more efficient)",
+      "Alveoli": "Tiny air sacs where gas exchange occurs"
+    },
+    "Equation": "Glucose + O₂ → CO₂ + H₂O + Energy",
+    "Remember": "Every cell respires, not just lungs!",
+    "Exam Focus": "Know the difference between respiration and breathing. Know where gas exchange happens."
+  }
+}

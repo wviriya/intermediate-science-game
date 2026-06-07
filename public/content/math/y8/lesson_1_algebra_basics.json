@@ -1,0 +1,195 @@
+{
+  "id": "algebra_basics",
+  "week": 1,
+  "title": "Algebra Basics - Variables and Expressions",
+  "subject": "math",
+  "level": "y8",
+  "icon": "📐",
+  "color": "bg-blue-100",
+  "textColor": "text-blue-700",
+  "difficulty": "intermediate",
+  "introduction": "Algebra is a branch of mathematics that uses letters (variables) to represent unknown numbers. Instead of just working with numbers, we can now write general rules and solve problems. This opens up a whole new way of thinking about mathematics!",
+  "sections": [
+    {
+      "title": "What is a Variable?",
+      "content": [
+        "A variable is a letter that represents an unknown number",
+        "Common variables: x, y, a, b (can use any letter)",
+        "Variables let us write general rules that work for many numbers",
+        "Example: If we buy apples at £2 each, and we buy n apples, we pay 2n pounds",
+        "The variable 'n' can be any number - we don't need to know the exact amount",
+        "Variables make it easy to work with unknown or changing quantities"
+      ]
+    },
+    {
+      "title": "Algebraic Expressions",
+      "content": [
+        "An expression is a combination of numbers, variables, and operations",
+        "Examples: 3x, 2y + 5, x² - 4x + 7",
+        "Each part of an expression is called a TERM",
+        "In 2x + 5: the terms are 2x and 5",
+        "Terms with the same variable are LIKE TERMS (can be combined)",
+        "Example: 3x + 2x = 5x (combining like terms)",
+        "Terms with different variables or powers CANNOT be combined",
+        "Example: 3x + 2y ≠ 5xy (stay separate)"
+      ]
+    },
+    {
+      "title": "Operations with Algebra",
+      "content": [
+        "ADDING: 2x + 3x = 5x (combine like terms)",
+        "SUBTRACTING: 5a - 2a = 3a (like terms only)",
+        "MULTIPLYING: 3 × (2x) = 6x, or 3(2x) = 6x",
+        "Note: 3 × 2x means we multiply 3 by the whole term 2x",
+        "BRACKETS: 2(x + 3) = 2x + 6 (distribute the 2 to both terms)",
+        "Order of operations still matters: Brackets, Orders, Division/Multiplication, Addition/Subtraction (BODMAS)"
+      ]
+    },
+    {
+      "title": "Simplifying Expressions",
+      "content": [
+        "Simplifying means making an expression as short as possible",
+        "Step 1: Combine like terms (2x + 3x = 5x)",
+        "Step 2: Remove unnecessary brackets using distribution",
+        "Step 3: Multiply out any remaining operations",
+        "Example: 3(x + 2) + 2x",
+        "= 3x + 6 + 2x (distribute the 3)",
+        "= 5x + 6 (combine like terms)"
+      ]
+    }
+  ],
+  "diagram": "ALGEBRAIC EXPRESSION PARTS:\n\n   2x + 5 = 11\n   ↓↓  ↓  ↓ ↓\n   Variables & Numbers = Equation\n   \nTERM BREAKDOWN:\n   2x + 5y - 3\n   ↓  ↓    ↓\n   2x  5y  -3\n   Terms (separate by + or -)\n   \nLIKE TERMS (can combine):\n   2x + 3x = 5x ✓\n   2x + 2y = Cannot combine ✗\n   \nCOEFFICIENT (number before variable):\n   5x    → coefficient is 5\n   x     → coefficient is 1\n   -3y   → coefficient is -3",
+  "flashcards": [
+    {
+      "id": "fc_1",
+      "q": "What is a variable?",
+      "a": "A letter that represents an unknown number"
+    },
+    {
+      "id": "fc_2",
+      "q": "What are like terms?",
+      "a": "Terms with the same variable and power that can be combined"
+    },
+    {
+      "id": "fc_3",
+      "q": "Simplify: 2x + 3x",
+      "a": "5x"
+    },
+    {
+      "id": "fc_4",
+      "q": "Expand: 3(x + 2)",
+      "a": "3x + 6"
+    },
+    {
+      "id": "fc_5",
+      "q": "What is a coefficient?",
+      "a": "The number that multiplies a variable (e.g., in 5x, the coefficient is 5)"
+    },
+    {
+      "id": "fc_6",
+      "q": "Can you combine 3x + 2y?",
+      "a": "No, because they have different variables"
+    },
+    {
+      "id": "fc_7",
+      "q": "Simplify: 5a - 2a",
+      "a": "3a"
+    },
+    {
+      "id": "fc_8",
+      "q": "What does 2(x + 3) mean?",
+      "a": "Multiply 2 by everything inside the brackets: 2x + 6"
+    },
+    {
+      "id": "fc_9",
+      "q": "What is an expression?",
+      "a": "A combination of numbers, variables, and operations"
+    },
+    {
+      "id": "fc_10",
+      "q": "Simplify: 4x + 2 + 3x - 1",
+      "a": "7x + 1"
+    }
+  ],
+  "quiz": [
+    {
+      "id": "q_1",
+      "q": "What does the variable x represent in algebra?",
+      "opts": ["A specific number like 5", "An unknown number that can vary", "A letter that has no meaning", "The result of an equation"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_2",
+      "q": "Simplify: 2x + 3x",
+      "opts": ["5x", "5x²", "6x", "2x + 3x"],
+      "ans": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_3",
+      "q": "Which terms are LIKE TERMS?",
+      "opts": ["3x and 3y", "2x and 5x", "x and x²", "2x and 2"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_4",
+      "q": "Expand: 4(x + 2)",
+      "opts": ["4x + 2", "4x + 8", "x + 8", "4x + 4"],
+      "ans": 1,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_5",
+      "q": "Simplify: 5a - 2a + 3",
+      "opts": ["3a + 3", "5a + 3", "3a", "5a - 2a + 3"],
+      "ans": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_6",
+      "q": "What is the coefficient in 7x?",
+      "opts": ["7", "x", "0", "7x"],
+      "ans": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_7",
+      "q": "Can you combine 3x + 2y?",
+      "opts": ["Yes, equals 5xy", "Yes, equals 5x + y", "No, different variables", "Yes, equals 5(x + y)"],
+      "ans": 2,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_8",
+      "q": "Simplify: 2(3x + 1) + 4x",
+      "opts": ["10x + 2", "9x + 1", "6x + 1", "5x + 2"],
+      "ans": 0,
+      "difficulty": "intermediate"
+    },
+    {
+      "id": "q_9",
+      "q": "What does 'like terms' mean?",
+      "opts": ["Terms that look similar", "Terms with the same variable and power", "Any two terms", "Terms that equal each other"],
+      "ans": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_10",
+      "q": "Simplify: 6x + 2y - 3x + y",
+      "opts": ["3x + 3y", "3x + y", "9x + 3y", "6x + 2y"],
+      "ans": 0,
+      "difficulty": "intermediate"
+    }
+  ],
+  "cheatsheet": {
+    "Variable": "A letter representing an unknown number",
+    "Like Terms": "Same variable & power - can combine (2x + 3x = 5x)",
+    "Unlike Terms": "Different variables - cannot combine (3x + 2y)",
+    "Coefficient": "The number multiplying the variable (in 5x, coefficient is 5)",
+    "Expression": "Numbers, variables, and operations combined",
+    "Expansion": "Remove brackets by multiplying: 2(x+3) = 2x + 6",
+    "Remember": "BODMAS for order of operations!"
+  }
+}
