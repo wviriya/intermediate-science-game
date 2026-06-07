@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { ArrowRight } from 'lucide-react';
 import { SUBJECTS, LEVELS, loadLessonIndex } from './utils/contentLoader';
+import {
+  loadGoogleAPI,
+  getAvailableSubjects,
+  getAvailableLevels,
+  getLessonsBySubjectAndLevel
+} from './utils/googleDriveClient';
 
 const SubjectSelector = ({ onSelect }) => {
   const [selectedSubject, setSelectedSubject] = useState(null);
@@ -13,22 +19,19 @@ const SubjectSelector = ({ onSelect }) => {
     setLoading(true);
     setError(null);
     try {
-      // Try to load from index.json
-      const lessonIndex = await loadLessonIndex(selectedSubject, selectedLevel);
-      if (lessonIndex && lessonIndex.length > 0) {
-        setLessons(lessonIndex);
+      // Load from Google Drive
+      const googleDriveLessons = await getLessonsBySubjectAndLevel(selectedSubject, selectedLevel);
+
+      if (googleDriveLessons && googleDriveLessons.length > 0) {
+        setLessons(googleDriveLessons);
       } else {
-        // Fallback: show placeholder lessons
-        setLessons([
-          { id: 'lesson_1_respiration', title: 'Respiration & the Respiratory System', week: 1 }
-        ]);
+        setError(`No lessons found for ${selectedSubject} ${selectedLevel}. Please check Google Drive folder structure.`);
+        setLessons([]);
       }
     } catch (err) {
-      // For now, show placeholder data
-      console.warn('Could not load lesson index, using defaults:', err);
-      setLessons([
-        { id: 'lesson_1_respiration', title: 'Respiration & the Respiratory System', week: 1 }
-      ]);
+      console.error('Error loading lessons from Google Drive:', err);
+      setError('Failed to load lessons. Check console for details.');
+      setLessons([]);
     } finally {
       setLoading(false);
     }
